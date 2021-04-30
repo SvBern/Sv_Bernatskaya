@@ -14,10 +14,10 @@
                 <form action="http://fe.it-academy.by/TestForm.php" method="POST" name="form1">
                     <fieldset>
                         <legend>Строка поиска</legend>
-                        <input type="search" name="inquiry" maxlength="10">
+                        <input type="search" name="inquiry1" maxlength="10">
                         <button type="submit">Искать</button><br>
-                        <input type="radio" value="на сайте">
-                        <input type="radio" value="в google">
+                        <input type="radio" name="radio" value="на сайте">
+                        <input type="radio" name="radio"value="в google">
                     </fieldset>
                 </form>
             </td>
@@ -26,9 +26,8 @@
                 <form action="http://fe.it-academy.by/TestForm.php" method="POST" name="form2">
                     <fieldset>
                         <legend>Строка поиска</legend>
-                        <input type="text" name="inquiry" maxlength="10">
-                        <p>*</p>
-                        <input type="button" value="искать"><br>
+                        <input type="search" name="inquiry2" maxlength="10" placeholder="Это обязательное поле!" required autofocus>
+                        <button type="submit">Искать</button><br>
                         <input type="radio" value="на сайте">
                         <input type="radio" value="в google">
                     </fieldset>
