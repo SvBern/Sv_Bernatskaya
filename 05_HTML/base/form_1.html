@@ -16,8 +16,10 @@
                         <legend>Строка поиска</legend>
                         <input type="search" name="inquiry1" maxlength="10">
                         <button type="submit">Искать</button><br>
-                        <input type="radio" name="radio" value="на сайте">
-                        <input type="radio" name="radio"value="в google">
+                        <input type="radio" name="radio" id="site1">
+                        <label for="site1">на сайте</label>
+                        <input type="radio" name="radio" id="google1">
+                        <label for="google1">в Google</label>
                     </fieldset>
                 </form>
             </td>
@@ -28,15 +30,28 @@
                         <legend>Строка поиска</legend>
                         <input type="search" name="inquiry2" maxlength="10" placeholder="Это обязательное поле!" required autofocus>
                         <button type="submit">Искать</button><br>
-                        <input type="radio" value="на сайте">
-                        <input type="radio" value="в google">
+                        <input type="radio" name="radio" id="site2">
+                        <label for="site2">на сайте</label>
+                        <input type="radio" name="radio" id="google2">
+                        <label for="google2">в Google</label>
                     </fieldset>
                 </form>
             </td>
-            <td></td>
         </tr>
         <tr>
-            <td></td>
+            <td>
+                <h4>Простая форма авторизации:</h4>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" name="form3">
+                    <fieldset>
+                        <legend>Авторизируйтесь</legend>
+                        <label><input type="text" name="login" placeholder="обязательное поле" required>Логин</label><br>
+                        <label><input type="password" name="password" placeholder="обязательное поле" required>Пароль</label><br>
+                        <input type="checkbox" name="check1" id="check">
+                        <label for="check">Оставаться в системе</label><br>
+                        <button type="submit">Войти</button>
+                    </fieldset>
+                </form>
+            </td>
             <td></td>
         </tr>
         <tr>
